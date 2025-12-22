@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: gitflow-analytics
-  version: "3.13.6"
+  version: "3.13.7"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gitflow_analytics-${{ version }}.tar.gz
-  sha256: e7af5cad40e3b72c668be004335aa4bbf1ee593811daacfeacefb78daaafc288
+  sha256: 4176b03287261fd6b3be6b44e6085e905146d13910c03b0acf63b6660b7ceb1f
 
 build:
   number: 0
