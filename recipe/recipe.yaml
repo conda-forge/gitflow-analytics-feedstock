@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: gitflow-analytics
-  version: "3.13.9"
+  version: 3.13.10
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gitflow_analytics-${{ version }}.tar.gz
-  sha256: de44aa99e8adb05a08a1a57d8348fde4d2aebb5f28691cc8e09beb1997913ea2
+  sha256: 54fb51e1ec5ce5bb53e40542e39a3a63e61bb7c6061fd64b951d3b69693c4b0f
 
 build:
   number: 0
@@ -46,7 +46,13 @@ requirements:
     - openai >=1.30.0
     - tiktoken >=0.7.0
     - numpy >=1.24.0
-
+    - urllib3
+    - toml
+    - joblib
+    - pytz
+    - requests
+    - httpx
+    - scipy
 tests:
   - python:
       imports:
