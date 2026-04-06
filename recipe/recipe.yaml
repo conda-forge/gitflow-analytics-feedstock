@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: gitflow-analytics
-  version: 3.13.21
+  version: 3.13.22
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gitflow_analytics-${{ version }}.tar.gz
-  sha256: 1cd491591eaa4ef0479e44329d66aba771e2b2dcd9a9347d6492571405a5b33a
+  sha256: 6f0afa37273c2259694b07ed652457663afb15b08bd723294392e388bd643807
 
 build:
   number: 0
@@ -45,6 +45,10 @@ requirements:
     - joblib >=1.5.3
     - pytz >=2024.1
     - requests >=2.28.0
+    - scipy
+    - urllib3
+    - toml
+    - httpx
 tests:
   - python:
       imports:
